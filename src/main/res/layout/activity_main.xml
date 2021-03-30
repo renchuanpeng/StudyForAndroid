@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="120dp"
+            android:layout_toLeftOf="@+id/btn3"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/light1"
+            android:background="@android:color/black"
+            />
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="47dp"
+            android:layout_toLeftOf="@+id/btn3"
+            android:scaleType="centerInside"
+            android:src="@mipmap/hdr"
+            android:background="@android:color/black"
+            />
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/lvjing"
+            android:background="@android:color/black"/>
+
+        <ImageButton
+            android:id="@+id/btn4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="47dp"
+            android:layout_toRightOf="@+id/btn3"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/bili"
+            android:background="@android:color/black"/>
+
+        <ImageButton
+            android:id="@+id/btn5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:layout_toRightOf="@+id/btn3"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/setting"
+            android:background="@android:color/black"/>
+
+    </RelativeLayout>
+    <com.example.mycameraunit.AutoFitTextureView
+        android:id="@+id/preview_texture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_gravity="bottom"
+        android:background="#00ffffff"
+        >
+    <RelativeLayout
+        android:id="@+id/RelativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <Button
+            android:id="@+id/btn_picture"
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_video"
+            android:text="拍照"
+            android:textColor="@android:color/black"></Button>
+
+        <Button
+            android:id="@+id/btn_face"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/btn_picture"
+            android:background="@drawable/btn_pic_txt"
+            android:text="人像"
+            android:textColor="#c0c0c0"
+            ></Button>
+        <Button
+            android:id="@+id/btn_dark"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="100dp"
+            android:layout_toLeftOf="@id/btn_picture"
+            android:background="@drawable/btn_pic_txt"
+            android:text="夜景"
+            android:textColor="#c0c0c0"
+        ></Button>
+
+        <Button
+            android:id="@+id/btn_video"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/btn_picture"
+            android:background="@drawable/btn_pic_txt"
+            android:text="录像"
+            android:textColor="#c0c0c0"></Button>
+
+        <Button
+            android:id="@+id/btn_more"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/btn_picture"
+            android:background="@drawable/btn_pic_txt"
+            android:text="更多"
+            android:textColor="#c0c0c0"></Button>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        >
+        <Button
+            android:id="@+id/btn_draw"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_draw_unit"
+            android:onClick="click"></Button>
+
+        <ImageButton
+            android:id="@+id/btn_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="80dp"
+            android:layout_toLeftOf="@+id/btn_draw"
+            android:background="@drawable/btn_reverse"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn_reversal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:layout_toRightOf="@+id/btn_draw"
+            android:background="@drawable/btn_reverse"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/re"></ImageButton>
+    </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>
